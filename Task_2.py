@@ -10,5 +10,5 @@ def get_numbers_ticket(min, max, quantity):
         return sorted(numbers)
 
 
-lottery_numbers = get_numbers_ticket(10, 49, 6)
+lottery_numbers = get_numbers_ticket(15, 49, 6)
 print("Лоторейні номера:", lottery_numbers)
