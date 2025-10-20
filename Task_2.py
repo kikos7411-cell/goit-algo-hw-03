@@ -1,7 +1,7 @@
 import random
 
 def get_numbers_ticket(min, max, quantity):
-    if not(1 <= min <= max <= 1000) or not (min <= quantity <= max):
+    if not(1 <= min <= max <= 1000) or not (1 <= quantity <= max):
         return []
     else:
         numbers = set()
@@ -10,5 +10,5 @@ def get_numbers_ticket(min, max, quantity):
         return sorted(numbers)
 
 
-lottery_numbers = get_numbers_ticket(1, 1000, 64)
+lottery_numbers = get_numbers_ticket(10, 49, 6)
 print("Лоторейні номера:", lottery_numbers)
